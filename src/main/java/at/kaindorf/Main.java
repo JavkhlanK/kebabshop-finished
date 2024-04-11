@@ -1,6 +1,9 @@
 package at.kaindorf;
 
-import at.kaindorf.factories.WagnaAsia;
+import at.kaindorf.pojos.Kebab;
+import at.kaindorf.pojos.MildKebab;
+import at.kaindorf.pojos.WagnaStyleCheeseKebab;
+import at.kaindorf.pojos.WagnaStyleSpicyKebab;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +11,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        KebabStore kebabStore = new KebabStore(new WagnaAsia());
-        System.out.println("Welcome to " + kebabStore.getName() + "!");
+        System.out.println("Welcome to Wagna Asia!");
 
         boolean isDone = false;
         String type = null;
@@ -36,7 +38,14 @@ public class Main {
                 }
             }
 
-            var kebab = kebabStore.orderKebab(type, unwantedIngredients);
+            Kebab kebab = null;
+            if (type.equalsIgnoreCase("cheese")) {
+                kebab = new WagnaStyleCheeseKebab(unwantedIngredients);
+            } else if (type.equalsIgnoreCase("spicy")) {
+                kebab = new WagnaStyleSpicyKebab(unwantedIngredients);
+            } else if (type.equalsIgnoreCase("mild")) {
+                kebab = new MildKebab(unwantedIngredients);
+            }
             System.out.println(kebab);
         }
     }
