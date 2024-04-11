@@ -1,6 +1,9 @@
 package at.kaindorf.factories;
 
-import at.kaindorf.pojos.*;
+import at.kaindorf.pojos.Kebab;
+import at.kaindorf.pojos.MildKebab;
+import at.kaindorf.pojos.WagnaStyleCheeseKebab;
+import at.kaindorf.pojos.WagnaStyleSpicyKebab;
 
 import java.util.List;
 

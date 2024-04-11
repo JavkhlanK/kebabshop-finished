@@ -1,6 +1,5 @@
 package at.kaindorf.pojos;
 
-import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -13,6 +12,7 @@ public class WagnaStyleCheeseKebab extends Kebab {
     public WagnaStyleCheeseKebab(List<String> unwantedIngredients) {
         ingredients.addAll(List.of("Meat", "Salad", "Mystery Sauce", "Tomato", "Cheese", "Cabbage", "Wagna-Special-Ingredient"));
         name = "Wagna Cheese Kebab";
+        ingredients.removeAll(unwantedIngredients);
     }
 
     @Override

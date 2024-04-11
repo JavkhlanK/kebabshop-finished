@@ -22,7 +22,7 @@ public class KebabStore {
         return kebabFactory.getName();
     }
     public Kebab orderKebab(String type, List<String> unwantedIngredients) {
-        Kebab kebab = kebabFactory .createKebab(type, unwantedIngredients);
+        Kebab kebab = kebabFactory.createKebab(type, unwantedIngredients);
         kebab.prepare();
         kebab.box();
 

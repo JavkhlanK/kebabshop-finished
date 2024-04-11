@@ -11,7 +11,6 @@ import java.util.List;
  * Time: 19:26:41
  */
 public abstract class KebabFactory {
-
     public abstract Kebab createKebab(String type, List<String> unwantedIngredients);
 
     public abstract String getName();

@@ -1,6 +1,9 @@
 package at.kaindorf.factories;
 
-import at.kaindorf.pojos.*;
+import at.kaindorf.pojos.CheeseKebab;
+import at.kaindorf.pojos.Kebab;
+import at.kaindorf.pojos.MildKebab;
+import at.kaindorf.pojos.SpicyKebab;
 
 import java.util.List;
 
@@ -23,8 +26,6 @@ public class WelatKebab extends KebabFactory {
         }
         return kebab;
     }
-
-
 
     @Override
     public String getName() {

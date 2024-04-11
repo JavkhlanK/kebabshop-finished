@@ -1,7 +1,5 @@
 package at.kaindorf.pojos;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,6 +15,7 @@ public class SpicyKebab extends Kebab {
         ingredients.add("Spicy Sauce");
         ingredients.add("Tomato");
         name = "Spicy Kebab";
+        ingredients.removeAll(unwantedIngredients);
     }
 
     @Override

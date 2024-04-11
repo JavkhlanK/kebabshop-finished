@@ -1,6 +1,5 @@
 package at.kaindorf.pojos;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
